@@ -85,6 +85,7 @@
 					<audio class="audio-player" src="audio/hello.mp3"></audio>
 				</div>
 			</div>
+
 			<footer class="footer-fix audio-footer">
 				<nav class="audio-navigation">
 					<div class="audio-btns">
@@ -100,7 +101,6 @@
 				</nav>
 			</footer>
 		</article>
-
 
 		<article class="player-block radio">
 			<div class="container">
@@ -186,6 +186,11 @@
 			</div>
 			<footer class="footer-fix radio-footer">
 				<button class="radio-stop fa fa-play"></button>
+				<!-- Volume -->
+				<button class="radio-button radio-button-volume__mute fa fa-volume-down"></button>
+				<input type="range" class="radio-volume" min="0" max="100" step="1" value="100">
+				<button class="radio-button radio-button-volume__loud fa fa-volume-up"></button>
+				<!-- Volume ends -->
 			</footer>
 		</article>
 	</main>
