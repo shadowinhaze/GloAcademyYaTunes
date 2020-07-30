@@ -106,5 +106,11 @@ export const videoPlayerInit = () => {
         videoVolume.value = 100;
         toggleMute();
     });
+
+    videoPlayerInit.stop = () => {
+       if (!videoPlayer.paused) {
+        stopPlay();
+       };
+    };
     
 };
